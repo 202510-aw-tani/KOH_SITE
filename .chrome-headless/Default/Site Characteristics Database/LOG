@@ -1,2 +1,3 @@
-2026/03/10-13:51:20.366 3614 Creating DB c:\academia\src\KOH_SITE\.chrome-headless\Default\Site Characteristics Database since it was missing.
-2026/03/10-13:51:20.374 3614 Reusing MANIFEST c:\academia\src\KOH_SITE\.chrome-headless\Default\Site Characteristics Database/MANIFEST-000001
+2026/03/13-15:25:18.274 3ce8 Reusing MANIFEST c:\academia\src\KOH_SITE\.chrome-headless\Default\Site Characteristics Database/MANIFEST-000001
+2026/03/13-15:25:18.284 3ce8 Recovering log #3
+2026/03/13-15:25:18.284 3ce8 Reusing old log c:\academia\src\KOH_SITE\.chrome-headless\Default\Site Characteristics Database/000003.log 

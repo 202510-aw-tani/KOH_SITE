@@ -1,2 +1,3 @@
-2026/03/10-13:51:20.530 104c Creating DB c:\academia\src\KOH_SITE\.chrome-headless\Default\Service Worker\Database since it was missing.
-2026/03/10-13:51:20.541 104c Reusing MANIFEST c:\academia\src\KOH_SITE\.chrome-headless\Default\Service Worker\Database/MANIFEST-000001
+2026/03/13-15:25:18.267 610 Reusing MANIFEST c:\academia\src\KOH_SITE\.chrome-headless\Default\Service Worker\Database/MANIFEST-000001
+2026/03/13-15:25:18.284 610 Recovering log #3
+2026/03/13-15:25:18.286 610 Reusing old log c:\academia\src\KOH_SITE\.chrome-headless\Default\Service Worker\Database/000003.log 

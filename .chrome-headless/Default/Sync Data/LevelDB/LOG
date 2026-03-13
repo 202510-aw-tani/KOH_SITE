@@ -1,2 +1,3 @@
-2026/03/10-13:51:20.315 3430 Creating DB c:\academia\src\KOH_SITE\.chrome-headless\Default\Sync Data\LevelDB since it was missing.
-2026/03/10-13:51:20.337 3430 Reusing MANIFEST c:\academia\src\KOH_SITE\.chrome-headless\Default\Sync Data\LevelDB/MANIFEST-000001
+2026/03/13-15:25:18.273 18dc Reusing MANIFEST c:\academia\src\KOH_SITE\.chrome-headless\Default\Sync Data\LevelDB/MANIFEST-000001
+2026/03/13-15:25:18.284 18dc Recovering log #3
+2026/03/13-15:25:18.286 18dc Reusing old log c:\academia\src\KOH_SITE\.chrome-headless\Default\Sync Data\LevelDB/000003.log 
