@@ -665,13 +665,34 @@ h2 {
 
 @media (min-width: 1281px) {
   .site-header__inner {
-    padding-left: 6px;
+    position: relative;
+    width: min(1440px, 100%);
+    max-width: none;
+    height: 72px;
+    margin-inline: auto;
+    padding-left: 0;
+    padding-right: 32px;
+  }
+
+  .site-header .logo {
+    position: absolute;
+    left: 60.5px;
+    top: 36px;
+    margin: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  .site-header__nav {
+    margin-left: auto;
   }
 
   .hero {
+    width: min(1440px, 100%);
+    margin-inline: auto;
     min-height: 700px;
     padding-top: 0;
     padding-bottom: 0;
+    position: relative;
   }
 
   .hero__circle--left {
@@ -696,14 +717,16 @@ h2 {
   }
 
   .hero .container {
-    width: min(1440px, 100%);
+    width: 100%;
     min-height: 700px;
   }
 
   .hero__content {
+    position: relative;
+    width: 100%;
     max-width: none;
     min-height: 700px;
-    margin-inline: 0;
+    margin: 0;
     padding-top: 0;
     transform: none;
   }
@@ -711,39 +734,53 @@ h2 {
   .hero h1 {
     position: absolute;
     left: 266px;
-    right: 544px;
     top: 293px;
+    width: 630px;
     margin: 0;
-    font-family: var(--font-body);
-    font-weight: 700;
     font-size: 32px;
-    line-height: 1.2;
-    letter-spacing: var(--ls-body);
+    line-height: var(--lh-h1);
+    letter-spacing: var(--ls-h1);
+    font-family: var(--font-heading);
+    font-weight: var(--fw-h1);
     white-space: nowrap;
     text-align: center;
   }
 
   .hero__body {
     position: absolute;
-    top: 330px;
-    left: 181px;
-    width: 700px;
+    left: 266px;
+    top: 348px;
+    width: 630px;
     margin: 0;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: var(--lh-body);
+    letter-spacing: var(--ls-body);
     text-align: center;
   }
 
   .hero__actions {
     position: absolute;
     left: 467px;
-    top: 464px;
+    top: 472px;
     width: 188px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__actions .btn--primary {
+    width: 188px;
+    min-width: 188px;
+    height: 44px;
+    padding: 0 24px;
   }
 
   .hero__note {
-    margin: 0;
+    margin-top: 8px;
     text-align: center;
+    font-size: var(--fs-caption);
+    line-height: var(--lh-caption);
+    letter-spacing: var(--ls-caption);
   }
 }
 
