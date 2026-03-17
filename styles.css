@@ -12,16 +12,16 @@
   --color-white: #ffffff;
   --color-placeholder-warm: #e5e5e5;
   --color-placeholder-warm-soft: #efece7;
-  --pc-main-bg: #f5efe8;
-  --pc-main-header: #e4d6c6;
-  --pc-main-cta: #33374a;
-  --pc-main-faq: #e0d2c1;
-  --pc-main-footer: #d2c6b9;
-  --pc-main-accent: #613a43;
-  --pc-main-ink: #232633;
-  --pc-main-ink-ui: #36384c;
-  --pc-main-line: #cdbfae;
-  --pc-main-line-strong: #b7a997;
+  --pc-main-bg: #f4f1ec;
+  --pc-main-header: #dfb7b1;
+  --pc-main-cta: #32354d;
+  --pc-main-faq: #ceb6b5;
+  --pc-main-footer: #d4aaa4;
+  --pc-main-accent: #6a404c;
+  --pc-main-ink: #20232f;
+  --pc-main-ink-ui: #2f3247;
+  --pc-main-line: #bea9a3;
+  --pc-main-line-strong: #a68d88;
 
   --color-surface-header-pc: var(--pc-main-header);
   --color-surface-cta-pc: var(--pc-main-cta);
@@ -607,16 +607,16 @@ h2 {
     --color-bg: var(--pc-main-bg);
     --color-sub: var(--pc-main-header);
     --color-text-main: var(--pc-main-ink);
-    --color-text-sub: #68636d;
+    --color-text-sub: #6a6471;
     --color-link: var(--pc-main-ink-ui);
-    --color-link-hover: #2b2e40;
+    --color-link-hover: #24273b;
     --color-border: var(--pc-main-line);
-    --color-image-placeholder: #e7e2dc;
-    --color-placeholder-warm: #e7e2dc;
-    --color-placeholder-warm-soft: #f1ece7;
+    --color-image-placeholder: #d7d9de;
+    --color-placeholder-warm: #d7d9de;
+    --color-placeholder-warm-soft: #e8eaee;
     --color-surface-header-pc: var(--pc-main-header);
     --color-surface-cta-pc: var(--pc-main-cta);
-    --color-surface-faq-pc: var(--pc-main-faq);
+    --color-surface-faq-pc: #613a43;
     --color-surface-footer-pc: var(--pc-main-footer);
     --color-surface-line-pc: var(--pc-main-line);
     --color-pricing-surface-pc: #fbf7f2;
@@ -635,7 +635,7 @@ h2 {
     font-size: 27px;
     font-weight: 700;
     line-height: 1;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.07em;
     color: var(--color-main);
   }
 
@@ -662,15 +662,15 @@ h2 {
   body:not(.faq-page) .nav-link {
     font-size: 14px;
     line-height: var(--lh-nav);
-    letter-spacing: 0.03em;
-    font-weight: 500;
+    letter-spacing: 0.025em;
+    font-weight: 600;
     color: var(--color-main);
   }
 
   body:not(.faq-page) .hero h1 {
     font-size: 34px;
     line-height: 1.4;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.03em;
     font-weight: 600;
     color: var(--color-text-main);
   }
@@ -678,21 +678,21 @@ h2 {
   body:not(.faq-page) .hero__body {
     font-size: 16px;
     line-height: 1.85;
-    letter-spacing: 0.018em;
+    letter-spacing: 0.02em;
     color: var(--color-text-main);
   }
 
   body:not(.faq-page) .hero__note {
     font-size: 12px;
     line-height: 1.6;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.035em;
     color: var(--color-text-sub);
   }
 
   body:not(.faq-page) .site-header {
     background: var(--color-surface-header-pc);
     border-bottom: 1px solid var(--pc-main-line-strong);
-    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.45);
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.42);
   }
 
   body:not(.faq-page) .hero {
@@ -701,27 +701,27 @@ h2 {
 
   body:not(.faq-page) .cta-band {
     background: var(--color-surface-cta-pc);
-    border-top: 1px solid rgba(255, 255, 255, 0.16);
-    border-bottom: 1px solid rgba(18, 22, 39, 0.62);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 8px 16px rgba(24, 27, 43, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(15, 18, 33, 0.64);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 8px 16px rgba(22, 25, 40, 0.22);
   }
 
   body:not(.faq-page) .hero .btn--primary {
     min-width: 188px;
     height: 44px;
     padding: 0 24px;
-    background: #36384c;
+    background: #2f3247;
     color: #ffffff;
-    border: 1px solid rgba(15, 19, 39, 0.38);
-    box-shadow: 0 4px 12px rgba(35, 38, 51, 0.24);
+    border: 1px solid rgba(14, 18, 34, 0.4);
+    box-shadow: 0 4px 12px rgba(27, 31, 48, 0.28);
     font-size: 14px;
     font-weight: 700;
     line-height: 1;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.03em;
   }
 
   body:not(.faq-page) .hero .btn--primary:hover {
-    background: #2b2e40;
+    background: #24273b;
     color: #ffffff;
   }
 
@@ -729,18 +729,18 @@ h2 {
     min-width: 214px;
     height: 44px;
     padding: 0 30px;
-    background: #613a43;
+    background: #6a404c;
     color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.46);
-    box-shadow: 0 0 0 1px rgba(22, 24, 37, 0.22), 0 6px 14px rgba(22, 24, 37, 0.34);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0 1px rgba(20, 22, 35, 0.24), 0 6px 14px rgba(20, 22, 35, 0.36);
     font-size: 14px;
     font-weight: 700;
     line-height: 1;
-    letter-spacing: 0.045em;
+    letter-spacing: 0.035em;
   }
 
   body:not(.faq-page) .cta-band .btn--band:hover {
-    background: #522f37;
+    background: #593441;
     color: #ffffff;
   }
 
@@ -748,19 +748,27 @@ h2 {
     background: var(--color-surface-faq-pc);
     border-top: 1px solid var(--pc-main-line-strong);
     border-bottom: 1px solid var(--pc-main-line-strong);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45), inset 0 -1px 0 rgba(54, 56, 76, 0.1);
-    color: var(--color-main);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22), inset 0 -1px 0 rgba(24, 16, 20, 0.42);
+    color: #fdfbfc;
+  }
+
+  body:not(.faq-page) .faq-teaser h2 {
+    color: #ffffff;
+  }
+
+  body:not(.faq-page) .faq-teaser__list li {
+    color: #fdfbfc;
   }
 
   body:not(.faq-page) .site-footer {
     background: var(--color-surface-footer-pc);
     border-top: 1px solid var(--pc-main-line-strong);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.36);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
   }
 
   body:not(.faq-page) .media-frame {
     background: var(--color-image-placeholder);
-    box-shadow: inset 0 0 0 1px rgba(216, 204, 192, 0.9), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+    box-shadow: inset 0 0 0 1px rgba(177, 183, 194, 0.72), inset 0 1px 0 rgba(255, 255, 255, 0.55);
   }
 
   body:not(.faq-page) .media-frame img[src^="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///"] {
@@ -769,7 +777,7 @@ h2 {
 
   body:not(.faq-page) .hero__circle {
     background: var(--color-image-placeholder);
-    box-shadow: inset 0 0 0 1px rgba(216, 204, 192, 0.95), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+    box-shadow: inset 0 0 0 1px rgba(177, 183, 194, 0.72), inset 0 1px 0 rgba(255, 255, 255, 0.55);
   }
 
   body:not(.faq-page) .pricing__table {
@@ -799,12 +807,14 @@ h2 {
   }
 
   body:not(.faq-page) .faq-teaser__link {
-    color: var(--color-main);
+    color: #ffffff;
     font-weight: 500;
+    text-decoration-color: rgba(255, 255, 255, 0.84);
   }
 
   body:not(.faq-page) .faq-teaser__link:hover {
-    color: var(--color-link-hover);
+    color: #f1e6e9;
+    text-decoration-color: #f1e6e9;
   }
 
   body:not(.faq-page) .media-frame--access-circle-lg {
