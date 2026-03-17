@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;600;700&display=swap");
-
 :root {
   --color-main: #6b4a3a;
   --color-sub: #e8e2da;
@@ -12,14 +10,28 @@
   --color-border: #d8cec2;
   --color-image-placeholder: #d4d4d4;
   --color-white: #ffffff;
-  --color-placeholder-warm: #d9d1c6;
-  --color-surface-header-pc: #e9e3da;
-  --color-surface-cta-pc: #e6dfd4;
-  --color-surface-faq-pc: #ece6dd;
-  --color-surface-footer-pc: #e3dbd0;
-  --color-surface-line-pc: #d9cdbf;
-  --color-pricing-surface-pc: #f1ebe2;
-  --color-pricing-line-pc: #cec0b1;
+  --color-placeholder-warm: #e5e5e5;
+  --color-placeholder-warm-soft: #efece7;
+  --pc-main-bg: #f5efe8;
+  --pc-main-header: #e4d6c6;
+  --pc-main-cta: #33374a;
+  --pc-main-faq: #e0d2c1;
+  --pc-main-footer: #d2c6b9;
+  --pc-main-accent: #613a43;
+  --pc-main-ink: #232633;
+  --pc-main-ink-ui: #36384c;
+  --pc-main-line: #cdbfae;
+  --pc-main-line-strong: #b7a997;
+
+  --color-surface-header-pc: var(--pc-main-header);
+  --color-surface-cta-pc: var(--pc-main-cta);
+  --color-surface-faq-pc: var(--pc-main-faq);
+  --color-surface-footer-pc: var(--pc-main-footer);
+  --color-surface-line-pc: var(--pc-main-line);
+  --color-pricing-surface-pc: #fbf8f3;
+  --color-pricing-th-pc: #eee6db;
+  --color-pricing-td-pc: #f8f4ee;
+  --color-pricing-line-pc: #c8bdb0;
 
   --font-logo: "Inria Serif", serif;
   --font-heading: "Noto Serif JP", serif;
@@ -590,76 +602,221 @@ h2 {
     --font-logo: "Inria Serif", Georgia, "Times New Roman", serif;
     --font-heading: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", "MS PMincho", serif;
     --font-body: "Noto Sans JP", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
-    --color-image-placeholder: var(--color-placeholder-warm);
+    --color-main: var(--pc-main-ink-ui);
+    --color-accent: var(--pc-main-accent);
+    --color-bg: var(--pc-main-bg);
+    --color-sub: var(--pc-main-header);
+    --color-text-main: var(--pc-main-ink);
+    --color-text-sub: #68636d;
+    --color-link: var(--pc-main-ink-ui);
+    --color-link-hover: #2b2e40;
+    --color-border: var(--pc-main-line);
+    --color-image-placeholder: #e7e2dc;
+    --color-placeholder-warm: #e7e2dc;
+    --color-placeholder-warm-soft: #f1ece7;
+    --color-surface-header-pc: var(--pc-main-header);
+    --color-surface-cta-pc: var(--pc-main-cta);
+    --color-surface-faq-pc: var(--pc-main-faq);
+    --color-surface-footer-pc: var(--pc-main-footer);
+    --color-surface-line-pc: var(--pc-main-line);
+    --color-pricing-surface-pc: #fbf7f2;
+    --color-pricing-th-pc: #efe4d9;
+    --color-pricing-td-pc: #f8f2eb;
+    --color-pricing-line-pc: var(--pc-main-line);
     font-family: var(--font-body);
+    font-synthesis: none;
     text-rendering: optimizeLegibility;
     font-kerning: normal;
     -webkit-font-smoothing: antialiased;
   }
 
+  body:not(.faq-page) .logo {
+    font-family: var(--font-logo);
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.08em;
+    color: var(--color-main);
+  }
+
+  body:not(.faq-page) h1,
+  body:not(.faq-page) h2,
+  body:not(.faq-page) h3 {
+    font-family: var(--font-heading);
+    color: var(--color-text-main);
+  }
+
+  body:not(.faq-page) .nav-link,
+  body:not(.faq-page) .hero__body,
+  body:not(.faq-page) .hero__note,
+  body:not(.faq-page) .flow__item p,
+  body:not(.faq-page) .pricing__table,
+  body:not(.faq-page) .faq-teaser__list,
+  body:not(.faq-page) .faq-teaser__link,
+  body:not(.faq-page) .access__text p,
+  body:not(.faq-page) .site-footer__copyright,
+  body:not(.faq-page) .btn {
+    font-family: var(--font-body);
+  }
+
+  body:not(.faq-page) .nav-link {
+    font-size: 14px;
+    line-height: var(--lh-nav);
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    color: var(--color-main);
+  }
+
+  body:not(.faq-page) .hero h1 {
+    font-size: 34px;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+    color: var(--color-text-main);
+  }
+
+  body:not(.faq-page) .hero__body {
+    font-size: 16px;
+    line-height: 1.85;
+    letter-spacing: 0.018em;
+    color: var(--color-text-main);
+  }
+
+  body:not(.faq-page) .hero__note {
+    font-size: 12px;
+    line-height: 1.6;
+    letter-spacing: 0.04em;
+    color: var(--color-text-sub);
+  }
+
   body:not(.faq-page) .site-header {
     background: var(--color-surface-header-pc);
-    border-bottom: 1px solid var(--color-surface-line-pc);
+    border-bottom: 1px solid var(--pc-main-line-strong);
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.45);
+  }
+
+  body:not(.faq-page) .hero {
+    background: var(--pc-main-bg);
   }
 
   body:not(.faq-page) .cta-band {
     background: var(--color-surface-cta-pc);
-    border-top: 1px solid var(--color-surface-line-pc);
-    border-bottom: 1px solid var(--color-surface-line-pc);
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+    border-bottom: 1px solid rgba(18, 22, 39, 0.62);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 8px 16px rgba(24, 27, 43, 0.2);
+  }
+
+  body:not(.faq-page) .hero .btn--primary {
+    min-width: 188px;
+    height: 44px;
+    padding: 0 24px;
+    background: #36384c;
+    color: #ffffff;
+    border: 1px solid rgba(15, 19, 39, 0.38);
+    box-shadow: 0 4px 12px rgba(35, 38, 51, 0.24);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.04em;
+  }
+
+  body:not(.faq-page) .hero .btn--primary:hover {
+    background: #2b2e40;
+    color: #ffffff;
+  }
+
+  body:not(.faq-page) .cta-band .btn--band {
+    min-width: 214px;
+    height: 44px;
+    padding: 0 30px;
+    background: #613a43;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.46);
+    box-shadow: 0 0 0 1px rgba(22, 24, 37, 0.22), 0 6px 14px rgba(22, 24, 37, 0.34);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.045em;
+  }
+
+  body:not(.faq-page) .cta-band .btn--band:hover {
+    background: #522f37;
+    color: #ffffff;
   }
 
   body:not(.faq-page) .faq-teaser {
     background: var(--color-surface-faq-pc);
-    border-top: 1px solid var(--color-surface-line-pc);
+    border-top: 1px solid var(--pc-main-line-strong);
+    border-bottom: 1px solid var(--pc-main-line-strong);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45), inset 0 -1px 0 rgba(54, 56, 76, 0.1);
+    color: var(--color-main);
   }
 
   body:not(.faq-page) .site-footer {
     background: var(--color-surface-footer-pc);
-    border-top: 1px solid var(--color-surface-line-pc);
+    border-top: 1px solid var(--pc-main-line-strong);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.36);
   }
 
   body:not(.faq-page) .media-frame {
-    background: linear-gradient(145deg, #e4dbcf 0%, #d5c9ba 100%);
-    box-shadow: inset 0 0 0 1px rgba(58, 47, 42, 0.05);
+    background: var(--color-image-placeholder);
+    box-shadow: inset 0 0 0 1px rgba(216, 204, 192, 0.9), inset 0 1px 0 rgba(255, 255, 255, 0.45);
   }
 
-  body:not(.faq-page) .hero__circle--left {
-    background: radial-gradient(circle at 30% 28%, #ede6dd 0%, #ddd1c4 62%, #cebfad 100%);
+  body:not(.faq-page) .media-frame img[src^="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///"] {
+    opacity: 0;
   }
 
-  body:not(.faq-page) .hero__circle--center {
-    background: radial-gradient(circle at 38% 30%, #efe9e1 0%, #e1d6ca 64%, #d1c1af 100%);
-  }
-
-  body:not(.faq-page) .hero__circle--right {
-    background: radial-gradient(circle at 35% 32%, #e9e2d9 0%, #d9cebf 60%, #c7b6a2 100%);
+  body:not(.faq-page) .hero__circle {
+    background: var(--color-image-placeholder);
+    box-shadow: inset 0 0 0 1px rgba(216, 204, 192, 0.95), inset 0 1px 0 rgba(255, 255, 255, 0.45);
   }
 
   body:not(.faq-page) .pricing__table {
     background: var(--color-pricing-surface-pc);
     border-color: var(--color-pricing-line-pc);
-    box-shadow: 0 2px 8px rgba(58, 47, 42, 0.04);
+    box-shadow: 0 8px 18px rgba(35, 38, 51, 0.07);
   }
 
   body:not(.faq-page) .pricing__table th,
   body:not(.faq-page) .pricing__table td {
     border-color: var(--color-pricing-line-pc);
+    padding: 16px 18px;
+    color: var(--color-text-main);
+    line-height: 1.75;
+    letter-spacing: 0.015em;
   }
 
   body:not(.faq-page) .pricing__table th {
-    background: rgba(232, 226, 218, 0.55);
+    background: var(--color-pricing-th-pc);
+    color: var(--color-main);
+    font-weight: 500;
+  }
+
+  body:not(.faq-page) .pricing__table td {
+    background: var(--color-pricing-td-pc);
+    color: var(--color-text-main);
+  }
+
+  body:not(.faq-page) .faq-teaser__link {
+    color: var(--color-main);
+    font-weight: 500;
+  }
+
+  body:not(.faq-page) .faq-teaser__link:hover {
+    color: var(--color-link-hover);
   }
 
   body:not(.faq-page) .media-frame--access-circle-lg {
-    background: radial-gradient(circle at 32% 30%, #f0e9e0 0%, #ded2c5 60%, #cbbba9 100%);
+    background: var(--color-image-placeholder);
   }
 
   body:not(.faq-page) .media-frame--access-circle-sm-top {
-    background: radial-gradient(circle at 36% 30%, #e8dfd4 0%, #d4c6b6 100%);
+    background: var(--color-placeholder-warm-soft);
   }
 
   body:not(.faq-page) .media-frame--access-circle-sm-bottom {
-    background: radial-gradient(circle at 36% 30%, #e5dccf 0%, #cfbeab 100%);
+    background: var(--color-placeholder-warm-soft);
   }
 }
 
@@ -825,11 +982,11 @@ h2 {
     top: 293px;
     width: 630px;
     margin: 0;
-    font-size: 32px;
-    line-height: var(--lh-h1);
-    letter-spacing: var(--ls-h1);
+    font-size: 34px;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
     font-family: var(--font-heading);
-    font-weight: var(--fw-h1);
+    font-weight: 600;
     white-space: nowrap;
     text-align: center;
   }
@@ -841,8 +998,9 @@ h2 {
     width: 630px;
     margin: 0;
     font-size: 16px;
-    line-height: var(--lh-body);
-    letter-spacing: var(--ls-body);
+    line-height: 1.85;
+    letter-spacing: 0.018em;
+    color: var(--color-text-main);
     text-align: center;
   }
 
@@ -866,9 +1024,10 @@ h2 {
   .hero__note {
     margin-top: 8px;
     text-align: center;
-    font-size: var(--fs-caption);
-    line-height: var(--lh-caption);
-    letter-spacing: var(--ls-caption);
+    font-size: 12px;
+    line-height: 1.6;
+    letter-spacing: 0.04em;
+    color: var(--color-text-sub);
   }
 }
 
