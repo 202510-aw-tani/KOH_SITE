@@ -2098,6 +2098,17 @@ h2 {
     color: #36384C;
   }
 
+  .faq-page .faq-title,
+  .faq-page .faq-item__question,
+  .faq-page .faq-item__answer {
+    text-shadow:
+      -1px -1px 0 #fff,
+       1px -1px 0 #fff,
+      -1px  1px 0 #fff,
+       1px  1px 0 #fff,
+       0    2px 0 #fff;
+  }
+
   .faq-page .faq-cta__button {
     background: #613A43;
     color: #ffffff;
@@ -2154,48 +2165,47 @@ h2 {
   .faq-section__inner {
     margin-left: 0;
     margin-right: 0;
-    padding: 0 14px;
+    padding: 0;
   }
 
   .faq-title {
-    margin: 0 0 18px;
-    padding-left: 44px;
+    margin: 0 0 14px;
+    padding-left: 46px;
     font-size: 14px;
     line-height: 1.4;
     letter-spacing: 0.03em;
   }
 
   .faq-item {
-    padding: 0 0 38px 20px;
+    padding: 0 0 16px 39px;
   }
 
   .faq-item:last-child {
-    padding-bottom: 38px;
+    padding-bottom: 16px;
   }
 
   .faq-item::before {
-    width: 34px;
-    height: 34px;
-    left: -2px;
-    top: auto;
-    bottom: 4px;
+    display: none;
   }
 
   .faq-item__question {
     font-size: 10px;
-    line-height: 1.55;
+    line-height: 1.42;
   }
 
   .faq-item__answer {
-    margin-top: 4px;
+    margin-top: 3px;
+    margin-left: 0;
     max-width: none;
     font-size: 10px;
-    line-height: 1.72;
+    line-height: 1.5;
   }
 
   .faq-cta {
-    margin-top: 10px;
-    padding-bottom: 8px;
+    width: 275px;
+    margin: 6px 0 0 39px;
+    padding-bottom: 6px;
+    text-align: center;
   }
 
   .faq-cta__button {
@@ -2208,38 +2218,130 @@ h2 {
   }
 
   .faq-cta__note {
-    margin-top: 4px;
+    margin-top: 2px;
     font-size: 9px;
     line-height: 1.5;
     letter-spacing: 0.03em;
   }
 
   .faq-decor__circle--top-lg {
-    width: 46px;
+    width: 45px;
     height: 46px;
-    left: -13px;
-    top: 90px;
+    left: 15px;
+    top: 14px;
   }
 
   .faq-decor__circle--top-sm {
-    width: 20px;
-    height: 20px;
-    left: 12px;
-    top: 82px;
+    width: 21px;
+    height: 21px;
+    left: 59px;
+    top: 2px;
   }
 
   .faq-decor__circle--top-xs {
-    width: 15px;
-    height: 15px;
-    left: 18px;
-    top: 104px;
+    width: 12px;
+    height: 14px;
+    left: 71px;
+    top: 28px;
+  }
+
+  .faq-decor__circle--q01,
+  .faq-decor__circle--q02,
+  .faq-decor__circle--q03,
+  .faq-decor__circle--q04,
+  .faq-decor__circle--q05,
+  .faq-decor__circle--q06,
+  .faq-decor__circle--q07,
+  .faq-decor__circle--q08,
+  .faq-decor__circle--q09,
+  .faq-decor__circle--q10,
+  .faq-decor__circle--q11 {
+    display: block;
+  }
+
+  .faq-decor__circle--q01 {
+    width: 34px;
+    height: 32px;
+    left: 29px;
+    top: 75px;
+  }
+
+  .faq-decor__circle--q02 {
+    width: 34px;
+    height: 34px;
+    left: 4px;
+    top: 117px;
+  }
+
+  .faq-decor__circle--q03 {
+    width: 34px;
+    height: 34px;
+    left: 4px;
+    top: 205px;
+  }
+
+  .faq-decor__circle--q04 {
+    width: 33px;
+    height: 34px;
+    left: 29px;
+    top: 249px;
+  }
+
+  .faq-decor__circle--q05 {
+    width: 34px;
+    height: 34px;
+    left: 4px;
+    top: 286px;
+  }
+
+  .faq-decor__circle--q06 {
+    width: 34px;
+    height: 34px;
+    left: 29px;
+    top: 330px;
+  }
+
+  .faq-decor__circle--q07 {
+    width: 34px;
+    height: 34px;
+    left: 4px;
+    top: 377px;
+  }
+
+  .faq-decor__circle--q08 {
+    width: 33px;
+    height: 34px;
+    left: 29px;
+    top: 416px;
+  }
+
+  .faq-decor__circle--q09 {
+    width: 34px;
+    height: 34px;
+    left: 4px;
+    top: 460px;
+  }
+
+  .faq-decor__circle--q10 {
+    width: 32px;
+    height: 34px;
+    left: 29px;
+    top: 504px;
+  }
+
+  .faq-decor__circle--q11 {
+    width: 34px;
+    height: 34px;
+    left: 4px;
+    top: 548px;
   }
 
   .faq-decor__circle--tail {
     width: 34px;
     height: 34px;
-    left: 20px;
-    bottom: 0;
+    left: 29px;
+    top: 592px;
+    bottom: auto;
   }
 
   .faq-footer {
@@ -2262,9 +2364,12 @@ h2 {
     font-size: 9px;
     line-height: 1.2;
     letter-spacing: 0.01em;
+    justify-self: end;
+    text-align: right;
   }
 
   .faq-footer__copyright {
     font-size: 9px;
+    justify-self: end;
   }
 }
