@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ja">
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
 
 <head>
   <meta charset="utf-8">
@@ -15,12 +15,12 @@
 <body>
   <header class="site-header">
     <div class="site-header__inner">
-      <a class="logo" href="./index.html" aria-label="KOH ホーム">
+      <a class="logo" href="/" th:href="@{/}" aria-label="KOH ホーム">
         <img class="logo__image" src="assets/images/common/koh-logo-new.png" alt="KOH">
       </a>
       <nav class="site-header__nav" aria-label="グローバルナビゲーション">
-        <a class="nav-link" href="./faq.html">FAQ（よくあるご質問）</a>
-        <a class="nav-link nav-link--cta" href="./reserve.html">ご予約はこちら</a>
+        <a class="nav-link" href="/faq" th:href="@{/faq}">FAQ（よくあるご質問）</a>
+        <a class="nav-link nav-link--cta" href="/reserve" th:href="@{/reserve}">予約フォームへ進む</a>
       </nav>
     </div>
   </header>
@@ -43,13 +43,12 @@
           <h1>静けさをまとう、香りづくりのひととき</h1>
           <p class="hero__body">
             静かな空間で、香りと向き合う約60分。<br>
-            国産素材の香りを起点に選択と調整を重ねて、<br>
-            あなただけのバランスに仕上げます。<br>
+            国産素材の香りを起点に選択と調整を重ねて、あなただけのバランスに仕上げます。<br>
             初めての方も、スタッフのサポートで安心してご参加いただけます。
           </p>
           <div class="hero__actions">
-            <a class="btn btn--primary" href="./reserve.html">ご予約はこちら</a>
-            <p class="hero__note">※予約フォームへ移動します</p>
+            <a class="btn btn--primary" href="/reserve" th:href="@{/reserve}">予約フォームへ進む</a>
+            <p class="hero__note">※このサイト内の予約フォームへ進みます</p>
           </div>
         </div>
       </div>
@@ -123,7 +122,7 @@
 
     <section class="cta-band">
       <div class="container">
-        <a class="btn btn--band" href="./reserve.html">ご予約はこちら</a>
+        <a class="btn btn--band" href="/reserve" th:href="@{/reserve}">予約フォームへ進む</a>
       </div>
     </section>
 
@@ -203,7 +202,7 @@
           <li>体験の流れを教えてください。</li>
           <li>所要時間はどれくらいですか？</li>
         </ul>
-        <a class="faq-teaser__link" href="./faq.html">よくあるご質問を見る</a>
+        <a class="faq-teaser__link" href="/faq" th:href="@{/faq}">よくあるご質問を見る</a>
       </div>
     </section>
 
@@ -225,7 +224,7 @@
               メール　0000@000.jp
             </p>
             <p>10:00 ～ 19:00</p>
-            <a class="btn btn--primary access__cta" href="./reserve.html">ご予約はこちら</a>
+            <a class="btn btn--primary access__cta" href="/reserve" th:href="@{/reserve}">予約フォームへ進む</a>
           </div>
           <div class="access__circles access-media-right" aria-hidden="true">
             <figure class="media-frame media-frame--access-circle-lg">
@@ -245,12 +244,12 @@
 
   <footer class="site-footer">
     <div class="site-footer__inner">
-      <a class="logo" href="./index.html" aria-label="KOH ホーム">
+      <a class="logo" href="/" th:href="@{/}" aria-label="KOH ホーム">
         <img class="logo__image" src="assets/images/common/koh-logo-new.png" alt="KOH">
       </a>
       <nav class="site-footer__nav" aria-label="フッターナビゲーション">
-        <a class="nav-link" href="./faq.html">FAQ（よくあるご質問）</a>
-        <a class="nav-link nav-link--cta" href="./reserve.html">ご予約はこちら</a>
+        <a class="nav-link" href="/faq" th:href="@{/faq}">FAQ（よくあるご質問）</a>
+        <a class="nav-link nav-link--cta" href="/reserve" th:href="@{/reserve}">予約フォームへ進む</a>
       </nav>
       <small class="site-footer__copyright">©KOH</small>
     </div>
